@@ -1,0 +1,126 @@
+/*支付流程*/
+
+.PaymentProcess {
+
+}
+
+.PaymentProcess-head-bg {
+  width: 100%;
+  height: 114px;
+}
+
+.PaymentProcess-cnt {
+  display: flex;
+  padding-top: 22px;
+  padding-right: 28px;
+  padding-left: 42px;
+  padding-bottom: 60px;
+  background: #F8F8F8;
+  min-height: calc(100vh - 114px);
+}
+
+.PaymentProcess-leftLine {
+  position: relative;
+  flex-grow: 1;
+  width: 6px;
+  background: #ccc;
+  margin-right: 18px;
+}
+
+.PaymentProcess-inf {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.PaymentProcess-leftLine-point {
+  position: absolute;
+  background: #3399FF;
+  width: 38px;
+  height: 38px;
+  font-style: normal;
+  text-align: center;
+  line-height: 34px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  left: -38px;
+  color: #fff;
+  font-size: 18px;
+  &.num1 {
+  }
+  &.num2 {
+  }
+  &.num3 {
+  }
+}
+
+.PaymentProcess-item {
+  flex-grow: 1;
+  margin-top: 26px;
+}
+
+.PaymentProcess-item-title {
+  color: #333;
+  font-size: 18px;
+  padding-left: 19px;
+}
+
+.PaymentProcess-item-cnt {
+  position: relative;
+  background: #fff;
+  border: 1px solid #C7C7C7;
+  color: #424242;
+  font-size: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+  margin-top: 9px;
+}
+
+.PaymentProcess-item-cnt-arrow {
+  position: absolute;
+  top: -9px;
+  display: block;
+  transform: scaleX(.8);
+  &::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #C7C7C7;
+  }
+  &::after {
+    position: absolute;
+    top: 100/375 + vw;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #fff;
+  }
+}
+
+.PaymentProcess-item-main {
+  font-size: 14px;
+  color: #424242;
+  line-height: 25px;
+}
+
+.PaymentProcess-item-main-tel {
+  line-height: 1;
+  margin-top: 10px;
+  padding-left: 30px;
+  color: #3399FF;
+  font-size: 20px;
+  .iconfont {
+    font-size: 22px;
+    margin-right: 12px;
+  }
+}
+
+/*支付流程 end*/

@@ -1,0 +1,7 @@
+<ul>
+  <li
+    *ngFor="let router of routers"
+  >
+    <a routerLink="{{'/' + router.path}}">{{router.data.title}}</a>
+  </li>
+</ul>

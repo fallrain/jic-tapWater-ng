@@ -1,0 +1,52 @@
+<div class="PaymentProcess">
+  <img src="@/assets/img/payment-process-head-bg@2x.png" class="PaymentProcess-head-bg">
+  <div class="PaymentProcess-cnt">
+    <div class="PaymentProcess-leftLine">
+    </div>
+    <ol class="PaymentProcess-inf">
+      <li
+        class="PaymentProcess-item"
+      >
+        <i class="PaymentProcess-leftLine-point num1">1</i>
+        <p class="PaymentProcess-item-title">绑卡</p>
+        <div class="PaymentProcess-item-cnt">
+          <i class="PaymentProcess-item-cnt-arrow"></i>
+          <p class="PaymentProcess-item-main">
+            1.关注xxx公众号 <br>
+            2.点击我要缴费，绑卡
+          </p>
+        </div>
+      </li>
+      <li
+        class="PaymentProcess-item"
+      >
+        <i class="PaymentProcess-leftLine-point num2">2</i>
+        <p class="PaymentProcess-item-title">在线缴费</p>
+        <div class="PaymentProcess-item-cnt">
+          <i class="PaymentProcess-item-cnt-arrow"></i>
+          <p class="PaymentProcess-item-main">
+            进入我要缴费菜单，选择缴费金额和缴费渠道，执行缴费
+          </p>
+        </div>
+      </li>
+      <li
+        class="PaymentProcess-item"
+      >
+        <i class="PaymentProcess-leftLine-point num3">3</i>
+        <p class="PaymentProcess-item-title">电话确认</p>
+        <div class="PaymentProcess-item-cnt">
+          <i class="PaymentProcess-item-cnt-arrow"></i>
+          <div class="PaymentProcess-item-main">
+            最后务必打电话确认是否缴费成功
+            <p class="PaymentProcess-item-main-tel">
+              <i class="iconfont icon-ai206"></i><a :href="'tel:'+defaultCardPhone"
+            >323212321</a>
+            </p>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
