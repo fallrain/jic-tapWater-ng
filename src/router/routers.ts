@@ -1,18 +1,7 @@
-import routerMap from '../router/routerMap';
+import {routerAy} from './routerMap';
+import {routersPath} from './routersPath';
 
-export default [
-  {
-    path: '',
-    component: routerMap.NavComponent,
-    data: {
-      title: '导航'
-    }
-  },
-  {
-    path: 'paymentSuccessComponent',
-    component: routerMap.PaymentSuccessComponent,
-    data: {
-      title: '支付成功'
-    }
-  }
-];
+routersPath.forEach((v, i) => {
+  v.component = routerAy[i];
+});
+export const routers = routersPath;

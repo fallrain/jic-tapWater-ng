@@ -1,9 +1,9 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import routerMap from '../router/routerMap';
+import {routerMap} from '../router/routerMap';
 
 @NgModule({
   declarations: [
@@ -12,6 +12,7 @@ import routerMap from '../router/routerMap';
     routerMap.NavComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule
   ],

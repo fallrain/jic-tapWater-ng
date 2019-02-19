@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import routers from '../../router/routers';
+import {routersPath} from '../../router/routersPath';
 
 @Component({
   selector: 'app-nav',
@@ -7,7 +7,7 @@ import routers from '../../router/routers';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-  routers = routers;
+  routers = routersPath;
 
   constructor() {
   }
